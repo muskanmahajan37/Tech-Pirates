@@ -120,14 +120,17 @@ $our_project = array("images/10.jpg","images/10.jpg","images/10.jpg","images/10.
 			   Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 			</p><br>
 		<?php for($k=0;$k<4;$k++):?>
-		<div class="col-sm-3 col-md-3 col-lg-3" style="position: relative;" >
-			<div class="imgWrap1">
-				<img src="<?php echo($our_project[$k]);?>" alt="img" class="img-responsive" style="width:100%;height:250px;"/>
-				<p class="imgDescription1"><?php echo($faculty_name[$k]."<br>".$faculty_post[$k]);?></p>
-			</div>
-			<br>
-		</div>
-		<?php endfor; ?>	
+                <div class="col-sm-3 col-md-3 col-lg-3" style="position: relative;">
+                    <div class="imgWrap1">
+                        <img src="<?php echo($our_project[$k]);?>" alt="img" class="img-responsive" style="width:100%;height:250px;" />
+                        <div class="imgDescription1">
+                           <h3 class="img-desc-h3"><?php echo($faculty_name[$k]);?></h3>
+                            <h5 class="img-desc-h5"><?php echo($faculty_post[$k]);?></h5>
+                        </div>
+                    </div>
+                    <br>
+                </div>
+                <?php endfor; ?>	
 	</div>
 	<div class="container" id="expertise" align="center" style="padding-top:5%;padding-bottom:5%;">
 		<h1>Our Expertise</h1><br>
